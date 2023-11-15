@@ -1,0 +1,18 @@
+.fullMenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menuHeader{
+    text-align: center;
+    font-family: "Moon Dance";
+    font-weight: bold;
+}
+
+.menuTable{
+    margin:20px;
+}
+hr{
+    margin: 0.5rem;
+}

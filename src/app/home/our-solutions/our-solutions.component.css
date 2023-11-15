@@ -1,0 +1,17 @@
+.ourSolutionsSection{
+    box-shadow: 10px 5px 25px -15px black;
+    background-color: var(--secondary-background);
+    padding:2vw;
+    justify-content: center;
+    display: flex;
+}
+.callToActionButton > button{
+    background-color: var(--primary-call-to-action);
+    border:none;
+    padding:10px;
+}
+.callToActionButton > button > p{
+    padding: 0;
+    margin: 0;
+}
+

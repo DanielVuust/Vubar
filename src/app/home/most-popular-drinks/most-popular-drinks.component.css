@@ -1,0 +1,35 @@
+.mostPopularDrinksSection{
+    padding:2vw;
+    justify-content: center;
+    display: flex;
+}
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,150px);  /* 3 columns */
+  grid-template-rows: repeat(2,150px); /* 3 rows  */
+  grid-gap:50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  padding: 20px;
+}
+.grid-item{
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid-item > *{
+    max-width: 100%;
+    max-height: 100%;
+}
+.grid-item > p{
+    padding: 0;
+    margin: 0;
+}
+.button{
+    background-color: var(--secondary-call-to-action);
+    border:none;
+    padding:10px;
+}
+.button > p{
+    margin: 0;
+}

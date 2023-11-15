@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-background: #FDF3DD;
+    --secondary-background: #E2D5B9;
+    --primary-call-to-action: #7B0C0C;
+    --secondary-call-to-action: #E3DAC6;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--primary-background);
+}
+.sectionWidth{
+    max-width: 1264px;
+}
+.sectionImage{
+    max-width: 75vw;
+    max-height: 75%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

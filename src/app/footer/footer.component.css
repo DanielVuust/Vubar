@@ -1,0 +1,6 @@
+.footerSection{
+    background-color: var(--secondary-background);
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}

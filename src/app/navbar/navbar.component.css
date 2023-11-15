@@ -1,0 +1,55 @@
+  .navbar {
+    background-color: var(--primary-background);
+    text-align: center;
+    box-sizing: content-box;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .navbar a.active {
+    color: grey;
+  }
+  .logoButton{
+    text-decoration: none !important;
+    
+  }
+  .navbarLine{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border:none;
+    height: 1px;
+    background-color: black;
+    opacity: 0.75;
+    position: relative;
+  }
+  .callToActionButton{
+    min-height: 100%;
+  }
+  .callToActionButton > button{
+    background-color: var(--primary-call-to-action);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .callToActionButton > button > p{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
