@@ -5,21 +5,26 @@
 :root {
     --primary-background: #FDF3DD;
     --secondary-background: #E2D5B9;
-    --primary-call-to-action: #7B0C0C;
+    --primary-call-to-action: #A62A6C;
     --secondary-call-to-action: #E3DAC6;
 }
 body{
+    min-height: 100vh;
     overflow-x: hidden;
     background-color: var(--primary-background);
 }
+
 .sectionWidth{
     max-width: 1264px;
 }
-.sectionImage{
+/* .sectionImage{
     max-width: 75vw;
     max-height: 75%;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

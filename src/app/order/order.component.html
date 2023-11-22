@@ -1,45 +1,58 @@
-<div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 orderForm">
-        <div class="userInfoForm">
-            <div class="form-group">
-                <label for="mailadresse">Email address</label>
-                <input type="email" class="form-control" id="mailadresse" aria-describedby="emailHelp" placeholder="Din mailadresse">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-            <div class="form-group">
-                <label for="arrangementDate">Dato for arrangement</label>
-                <input type="date" class="form-control" id="arrangementDate" placeholder="Dato for arrangement">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-            <div class="form-group">
-                <label for="guestCount">Antal gæster</label>
-                <input type="number" class="form-control" id="guestCount" placeholder="Antal gæster">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-            <div class="form-group">
-                <label for="mailadresse">Arrangement type</label>
-                <input type="text" class="form-control" id="mailadresse" placeholder="Arrangement type">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-            <div class="form-group">
-                <label for="phoneNumber">Telefonnummer</label>
-                <input type="phonenumber" class="form-control" id="phoneNumber" placeholder="Telefonnummer">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 orderForm">
-        <div class="userChoicesForm">
-            
-        </div>
-    </div>
-    <div class="col-lg-2"></div>
+<div class="justify-content-center d-flex">
+    <div class="row orderForm" >
+        <div class="row">
+            <h3 style="text-align: center;">Modtag uforpligtende tilbud</h3>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Din email</mat-label>
+                    <input matInput [formControl]="email" required>
+                </mat-form-field>
 
-    <div class="col-12">
-        <button type="button" class="btn btn-primary"
-            tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-            Simple demo
-        </button>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Antal gæster</mat-label>
+                    <input matInput type="number" required>
+                </mat-form-field>
+
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Dato</mat-label>
+                    <input matInput type="date" required>
+                </mat-form-field>
+
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Type af arrangement</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Telefonnummer</mat-label>
+                    <input matInput [formControl]="phoneNumber" type="text" >
+                </mat-form-field>
+
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Adresse for arrangement</mat-label>
+                    <input matInput [formControl]="phoneNumber" type="text" >
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="form-field">
+                    <mat-label>Kommentar</mat-label>
+                    <input matInput [formControl]="phoneNumber" type="text" >
+                </mat-form-field>
+
+            </div>
+            <button mat-raised-button (click)="submit()" class="submit-button col-12" >
+                Modtag tilbud
+            </button>
+        </div>
     </div>
 </div>

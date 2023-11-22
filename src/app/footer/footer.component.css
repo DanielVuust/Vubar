@@ -4,3 +4,11 @@
     bottom: 0;
     width: 100vw;
 }
+.social-line{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.social-line > a{
+    padding: 10px;
+}

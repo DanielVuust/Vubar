@@ -1,13 +1,31 @@
 .orderForm{
-     padding: 20px;
-     border: 1px solid #e3e3e3;
-     border-radius: 5px;
-     background-color: #f5f5f5;
-     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);    
+    max-width: 1264px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--secondary-background);
+    margin: 20px;
 }
 .userInfoForm{
     padding:40;
 }
 .userChoicesForm{
     padding:40;
+}
+.submit-button-container{
+    display: flex;
+    justify-content: end;
+}
+.submit-button{
+    background-color: var(--primary-call-to-action);
+    font-size: x-large;
+}
+.submit-button:hover{
+    font-size: xx-large;
+    transition: 0.2s;
+}
+.form-field-container{
+    padding: 20px;
+}
+.form-field{
+    width: 100%;
 }
