@@ -2,7 +2,6 @@
     font-size: 1.9em;
     margin-bottom: 0;
     font-family: "Moon Dance";
-
 }
 .cocktailDescription{
     font-size: 1em;
@@ -11,9 +10,13 @@
     font-style: italic;
 }
 .cocktailCard{
+    width: 100%;
     margin-right:20px;
     display: flex;
     flex-direction: row;
+}
+.cocktailCard > p{
+    width: 100%;
 }
 .glassImage{
     padding-right: 20px;

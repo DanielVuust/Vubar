@@ -8,12 +8,12 @@
         <div *ngFor="let section of cocktailsSections">
             <hr>
             <div *ngFor="let item of section.cocktails let isEven = even;let i = index;let isLast= last"  >
-                <tr *ngIf="isEven" class="row justify-content-center">
-                    <td class=" col-sm-12 col-md-6" style="text-align: left;">
+                <tr *ngIf="isEven" class="row justify-content-center" style="width:100%">
+                    <td class=" col-sm-12 col-md-6 justify-content-center d-flex" style="text-align: left;" >
                         <app-cocktail-card [cocktail]="section.cocktails[i]">
                         </app-cocktail-card>
                     </td>
-                    <td *ngIf="!isLast" class=" col-sm-12 col-md-6">
+                    <td *ngIf="!isLast" class=" col-sm-12 col-md-6 justify-content-center d-flex">
                         <app-cocktail-card [cocktail]="section.cocktails[i + 1]">
                         </app-cocktail-card>
                     </td>
