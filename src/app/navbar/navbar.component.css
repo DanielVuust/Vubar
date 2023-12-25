@@ -4,6 +4,7 @@
     box-sizing: content-box;
     padding-left: 40px;
     padding-right: 40px;
+    max-height: 10vh;
   }
   
   .navbar a {
@@ -12,7 +13,10 @@
     font-size: 17px;
     text-decoration: none;
   }
-  
+  .navbar > div{
+    max-height: 10vh;
+    overflow: hidden;
+  }
   .navbar a:hover {
     color: black;
     text-decoration: underline;
@@ -22,8 +26,11 @@
     color: grey;
   }
   .logoButton{
-    text-decoration: none !important;
-    
+    max-height: 100%;
+  }
+  .logoButton > img{
+    max-height: 10vh;
+    max-width: 100%;
   }
   .navbarLine{
     margin-left: 40px;
