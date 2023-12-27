@@ -8,7 +8,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { OrderComponent } from './order/order.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CocktailMenuComponent } from './cocktail-menu/cocktail-menu.component';
 import { CocktailCardComponent } from './cocktail-menu/cocktail-card/cocktail-card.component';
 import { OurSolutionsComponent } from './home/our-solutions/our-solutions.component';
@@ -52,7 +51,6 @@ import { HttpClientModule } from  '@angular/common/http';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
