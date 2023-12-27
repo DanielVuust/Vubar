@@ -29,6 +29,7 @@ export class OrderComponent {
     Comment: new FormControl(this.form.comment, []),
     EventType: new FormControl(this.form.eventType, [Validators.required]),
   })
+  successMessage: string | null = null;
   constructor(private httpService: HttpService) { }
   submit(){
     if(this.group.invalid){
@@ -36,8 +37,13 @@ export class OrderComponent {
       return;
     }
     console.log(this.group.value);
-    this.httpService.post("https://vubarmailservice20231214211923.azurewebsites.net/api/MailSender", this.group.value).subscribe((data) => {
-      console.log(data);
+    this.httpService.post("https://vubarmailservice20231214211923.azurewebsites.net/api/MailSender", this.group.value).subscribe({
+      next: (response) => {
+        this.successMessage = "Tak for din henvendelse, vi vender tilbage hurtigst muligt";
+      },
+      error: (error) => {
+        this.errorMessage = "Fejl kunne ikke sende"
+      }
     });
   }
 }

@@ -62,6 +62,7 @@
                 Modtag tilbud
             </button>
             <mat-error *ngIf="errorMessage != null">{{this.errorMessage}}</mat-error>
+            <p *ngIf="successMessage != null" color="green">{{this.successMessage}}</p>
         </form>
     </div>
 </div>
