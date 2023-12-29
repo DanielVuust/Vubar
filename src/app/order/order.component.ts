@@ -36,6 +36,8 @@ export class OrderComponent {
       this.errorMessage = "Udfyld venligst alle felterne"
       return;
     }
+    this.errorMessage = null;
+
     console.log(this.group.value);
     this.httpService.post("https://vubarmailservice20231214211923.azurewebsites.net/api/MailSender", this.group.value).subscribe({
       next: (response) => {
