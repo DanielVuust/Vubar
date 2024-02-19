@@ -12,3 +12,9 @@ h1{
 .aboutUsPage{
     background-color: var(--primary-background);
 }
+.aboutUsSection > *{
+    margin: 20px;
+}
+.aboutUsSection > h4, h2{
+    font-weight: bold;
+}

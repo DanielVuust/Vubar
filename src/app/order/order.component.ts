@@ -27,6 +27,7 @@ export class OrderComponent {
     Date: new FormControl(this.form.date, [Validators.required]),
     GuestCount: new FormControl(this.form.guestCount, [Validators.required]),
     Comment: new FormControl(this.form.comment, []),
+    EventHours: new FormControl(this.form.comment, [Validators.required]),
     EventType: new FormControl(this.form.eventType, [Validators.required]),
   })
   successMessage: string | null = null;
