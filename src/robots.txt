@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://vubar.dk/sitemap.xml
