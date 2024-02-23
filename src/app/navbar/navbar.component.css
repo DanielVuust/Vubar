@@ -108,5 +108,8 @@
     align-self: center;
     justify-self: end
   }
+  .mobile-navbar-row-logo{
+    max-width: 175px;
+  }
   
   
