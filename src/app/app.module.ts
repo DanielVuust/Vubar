@@ -24,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
 import { OrderSuccessfulComponent } from './order/order-successful/order-successful.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { OrderSuccessfulComponent } from './order/order-successful/order-success
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,6 @@
     min-height: 40px;
     box-shadow: 10px 5px 25px -15px black;
     background-color: var(--secondary-background);
-    position: relative;
     bottom: 0;
     width: 100vw;
 }

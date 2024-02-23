@@ -19,4 +19,49 @@
         </button>
     </div>
 </nav>
+<nav class="mobile-navbar">
+
+    <mat-drawer-container class="mobile-navbar-container" >
+        <mat-drawer #drawer class="mobile-navbar-drawer" mode="side">
+            <div class="navbar-item">
+                <button type="button" (click)="drawer.toggle()" mat-icon-button>
+                    <mat-icon aria-label="" color="white">close</mat-icon>
+                </button>
+            </div>
+            <div class="navbar-item">
+                <h2>
+                    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="drawer.toggle()">Hjem</a>
+                </h2>
+            </div>
+            <div class="navbar-item">
+                <h2>
+                    <a routerLink="/cocktail-menu" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="drawer.toggle()">Cocktailkort</a>
+                </h2>
+            </div>
+            <div class="navbar-item">
+                <h2>
+                    <a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="drawer.toggle()">Om os</a>
+                </h2>
+            </div>
+            <div class="col-sm-2 callToActionButton" class="navbar-item mobile-order-navbar-button" >
+                <button mat-raised-button routerLink="/order" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="drawer.toggle()">
+                    Se tilbud
+                </button>
+            </div>
+        </mat-drawer>
+
+    </mat-drawer-container>
+    <div class="mobile-navbar-row">
+        <div></div>
+        <div>
+            <a routerLink="/home" class="mobile-navbar-row-logo">
+                <img src="assets/logo/VubarLogoText.png" alt="">
+            </a>
+        </div>
+        <button type="button" (click)="drawer.toggle()" mat-icon-button class="mobile-navbar-row-button">
+            <mat-icon aria-label="Side nav toggle icon" style="float: right;">menu</mat-icon>
+        </button>
+    </div>
+</nav>
+
 <hr class="navbarLine">
